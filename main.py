@@ -1,4 +1,4 @@
-def getMarketDetails_function(request):
+def getmarketDetails_function(request):
     """Responds to any HTTP request.
     Args:NEW PUSH Trigger
     """
