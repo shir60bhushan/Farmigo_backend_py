@@ -1,6 +1,6 @@
 def getmarketDetails_function(request):
     """Responds to any HTTP request.
-    Args:NEW PUSH Trigger
+    Args:NEW PUSH Trigger without zip
     """
     request_json = request.get_json()
     if request.args and 'message' in request.args:
