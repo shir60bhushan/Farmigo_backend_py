@@ -1,40 +1,16 @@
-import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
-
-# Setup done
-cred = credentials.Certificate("serviceAccountkey.json")
-firebase_admin.initialize_app(cred)
-
-db=firestore.client()
-
-# Using add to add documents with auto generated keys
-db.collection('persons').add({'name':'John', 'age':40, 'address': "New York"})
-db.collection('persons').add({'name':'Jane', 'age':50, 'address': "Los Angeles"})
-db.collection('persons').add({'name':'Mark', 'age':40, 'address': "Paris"})
-db.collection('persons').add({'name':'Harry', 'age':40, 'address': "London"})
-db.collection('persons').add({'name':'Ron', 'age':40, 'address': "Milan"})
-
-# Create a refer   ence for the document before setting
-data = {
-    'name': 'Harry Potter',
-    'address': 'USA'
-}
-
-# Add a new doc in collection 'persons' with ID 'HP'
-db.collection('persons').document('HP').set(data)
-
-# Merge new data with existing data for 'HP'
-data = {'employed':True}
-db.collection('persons').document('HP').set(data, merge=True)
-
-# Using document() to get an auto generated ID with set()
-data = {
-    'name': 'Iron Man',
-    'address': 'USA'
-}
-document_reference=db.collection('heroes').document()
-document_reference.set(data)
-
-# Adding subcollections
-document_reference.collection('movies').add({'name':'Avengers'})
+def getMarketDetails_function(request):
+    """Responds to any HTTP request.
+    Args:
+        request (flask.Request): HTTP request object.
+    Returns:
+        The response text or any set of values that can be turned into a
+        Response object using
+        `make_response <http://flask.pocoo.org/docs/1.0/api/#flask.Flask.make_response>`.
+    """
+    request_json = request.get_json()
+    if request.args and 'message' in request.args:
+        return request.args.get('message')
+    elif request_json and 'message' in request_json:
+        return request_json['message']
+    else:
+        return f'Hello cloud advocates!!!'
