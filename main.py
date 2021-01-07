@@ -9,3 +9,7 @@ def getmarketDetails_function(request):
         return request_json['message']
     else:
         return f'Hello cloud advocates!!!'
+
+
+        def pushDataToFireStore():
+            print("sdhdjf")
