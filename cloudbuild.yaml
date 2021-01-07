@@ -9,3 +9,12 @@ steps:
   - --runtime=python37
   - --allow-unauthenticated 
   
+  args:
+  - functions
+  - deploy
+  - pushDataToFireStore
+  - --source=.
+  - --trigger-http
+  - --runtime=python37
+  - --allow-unauthenticated 
+  
