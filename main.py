@@ -5,7 +5,7 @@ from firebase import firebase
 
 def getmarketDetails_function(request):
     """Responds to  HTTP request.
-    Args:double function
+    Args:doudfsdfsdfsble function
     """
     request_json = request.get_json()
     if request.args and 'message' in request.args:
