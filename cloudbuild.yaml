@@ -1,17 +1,21 @@
 steps:
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: [
-      'functions', 'deploy', '- getmarketDetails_function',
-      '--trigger-http',
-      '--runtime', 'python37',
-      '--region', 'us-central1',
-      '--source', 'first_function'
-    ]
-  - name: 'gcr.io/cloud-builders/gcloud'
-    args: [
-      'functions', 'deploy', '- pushDataToFireStore',
-      '--trigger-http',
-      '--runtime', 'python37',
-      '--region', 'us-central1',
-      '--source', 'second_function'
-    ]
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:[
+  - functions
+  - deploy
+  - getmarketDetails_function
+  - --source=.
+  - --trigger-http
+  - --runtime=python37
+  - --allow-unauthenticated
+  ]
+ - name: 'gcr.io/cloud-builders/gcloud'
+  args:[
+  - functions
+  - deploy
+  - pushDataToFireStore
+  - --source=.
+  - --trigger-http
+  - --runtime=python37
+  - --allow-unauthenticated ]
+    
