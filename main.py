@@ -1,3 +1,8 @@
+import firebase_admin
+from firebase_admin import credentials
+from firebase_admin import firestore
+from firebase import firebase
+
 def getmarketDetails_function(request):
     """Responds to  HTTP request.
     Args:NEW PUSH  zip new test comment
@@ -11,5 +16,7 @@ def getmarketDetails_function(request):
         return f'Hello cloud advocates!!!'
 
 
-        def pushDataToFireStore():
+def pushDataToFireStore():
             print("sdhdjf")
+
+            return "adfadsf"
