@@ -4,6 +4,7 @@ steps:
   - functions
   - deploy
   - getmarketDetails_function
+  - pushDataToFireStore
   - --source=.
   - --trigger-http
   - --runtime=python37
