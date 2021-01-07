@@ -18,5 +18,4 @@ def getmarketDetails_function(request):
 
 def pushDataToFireStore():
             print("sdhdjf")
-
-            return "adfadsf"
+            return f"adfadsf"
