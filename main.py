@@ -1,5 +1,5 @@
 def getmarketDetails_function(request):
-    """Responds to any HTTP request.
+    """Responds to  HTTP request.
     Args:NEW PUSH Trigger without zip
     """
     request_json = request.get_json()
