@@ -27,6 +27,6 @@ def pushDataToFireStore():
         'name': 'Amazon',
         'creationDate': today,
         'lastClose': 3443.63,
-        'indices': [ 'NDX', 'OEX', 'S5COND', 'SPX' ]
+        'indices': [ 'NDX', 'OEX', 'S5CmOND', 'SPX' ]
       }
     )
