@@ -1,2 +1,2 @@
-import firebase_admin
-firebase-admin
+# https://pypi.org/project/firebase-admin/
+firebase-admin==2.16.0
