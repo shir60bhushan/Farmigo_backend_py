@@ -7,7 +7,7 @@ steps:
   - --source=.
   - --trigger-http
   - --runtime=python37
-  - --allow-unauthenticated
+  - --allow-unauthenticated 
   ]
  - name: 'gcr.io/cloud-builders/gcloud'
   args:[
@@ -17,5 +17,6 @@ steps:
   - --source=.
   - --trigger-http
   - --runtime=python37
-  - --allow-unauthenticated ]
+  - --allow-unauthenticated 
+  ]
     
