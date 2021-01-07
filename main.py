@@ -5,7 +5,7 @@ from firebase import firebase
 
 def getmarketDetails_function(request):
     """Responds to  HTTP request.
-    Args:NEW PUSH  zip new test comment
+    Args:double function
     """
     request_json = request.get_json()
     if request.args and 'message' in request.args:
@@ -17,5 +17,5 @@ def getmarketDetails_function(request):
 
 
 def pushDataToFireStore():
-            print("sdhdjf")
+            print("sdhdjsafsdfsf")
             return f"adfadsf"
