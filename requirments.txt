@@ -1,2 +1,4 @@
 # https://pypi.org/project/firebase-admin/
-firebase-admin==2.16.0
+firebase-admin==2.18.0
+# https://pypi.org/project/google-cloud-firestore/
+google-cloud-firestore==1.3.0
