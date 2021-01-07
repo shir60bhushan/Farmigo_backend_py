@@ -3,6 +3,10 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 from firebase import firebase
 
+cred = credentials.Certificate('./ServiceAccountKey.json')
+default_app = firebase_admin.initialize_app(cred)
+db = firestore.client()
+
 def getmarketDetails_function(request):
     """Responds to  HTTP request.
     Args:doudfsdfsdfsble function
@@ -16,6 +20,14 @@ def getmarketDetails_function(request):
         return f'Hello cloud advocates!!!'
 
 
+  
 def pushDataToFireStore():
-            print("sdhdjsafsdfsf")
-            return f"adfadsf"
+    today = datetime.datetime.now()
+    db.collection('XXXX').document('YY').set(
+      {
+        'name': 'Amazon',
+        'creationDate': today,
+        'lastClose': 3443.63,
+        'indices': [ 'NDX', 'OEX', 'S5COND', 'SPX' ]
+      }
+    )
