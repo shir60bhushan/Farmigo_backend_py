@@ -8,7 +8,7 @@ default_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 def getmarketDetails_function(request):
-    """Responds to00  HTTP request.
+    """Responds   to00  HTTP request.
     Args:doudf raw pushsdfsble function
     """
     request_json = request.get_json()
