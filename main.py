@@ -9,8 +9,7 @@ db = firestore.client()
 
 def getMarketDetails(request):
     """Responds,,   to00  HTTP request.
-    Args:doujdf raw pushsdfsble function
-    """
+    Args:doujdf raw pushsdfsble function"""
     request_json = request.get_json()
     if request.args and 'message' in request.args:
         return request.args.get('message')
