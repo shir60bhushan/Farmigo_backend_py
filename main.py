@@ -8,7 +8,7 @@ default_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 def getmarketDetails_function(request):
-    """Responds to  HTTP request.
+    """Responds to00  HTTP request.
     Args:doudf raw pushsdfsble function
     """
     request_json = request.get_json()
@@ -24,7 +24,7 @@ def getmarketDetails_function(request):
 def pushDataToFireStore():
     today = datetime.datetime.now()
    
-    # Using add to add documents with auto generated keys
+    # Using add t00o add documents with auto generated keys
 db.collection('persons').add({'name':'John', 'age':88, 'address': "New York"})
 db.collection('persons').add({'name':'Jane', 'age':50, 'address': "Los Angeles"})
 db.collection('persons').add({'name':'Mark', 'age':40, 'address': "Paris"})
