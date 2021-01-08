@@ -15,6 +15,6 @@ steps:
   - pushDataToFireStore
   - --source=.
   - --trigger-http
-  - --runtime=python38
+  - --runtime=python39
   - --allow-unauthenticated 
   
