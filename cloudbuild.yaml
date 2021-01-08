@@ -3,7 +3,7 @@ steps:
   args:
   - functions
   - deploy
-  - getmarketDetails_function
+  - getMarketDetails
   - --source=.
   - --trigger-http
   - --runtime=python37
@@ -12,7 +12,7 @@ steps:
   args:
   - functions
   - deploy
-  - pushDataToFireStore
+  - pushToFireStoreData
   - --source=.
   - --trigger-http
   - --runtime=python37

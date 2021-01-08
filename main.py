@@ -7,7 +7,7 @@ cred = credentials.Certificate('./serviceAccountkey.json')
 default_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-def getmarketDetails_function(request):
+def getMarketDetails(request):
     """Responds,,   to00  HTTP request.
     Args:doujdf raw pushsdfsble function
     """
@@ -21,7 +21,7 @@ def getmarketDetails_function(request):
 
         
   
-def pushDataToFireStore():
+def pushToFireStoreData():
     today = datetime.datetime.now()
    
     # Using add t00o add documents with auto generated keys
