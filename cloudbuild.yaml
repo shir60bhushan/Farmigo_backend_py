@@ -6,7 +6,7 @@ steps:
   - getmarketDetails_function
   - --source=.
   - --trigger-http
-  - --runtime=python37
+  - --runtime=python38
   - --allow-unauthenticated 
   
   args:
@@ -15,6 +15,6 @@ steps:
   - pushDataToFireStore
   - --source=.
   - --trigger-http
-  - --runtime=python37
+  - --runtime=python38
   - --allow-unauthenticated 
   
