@@ -8,7 +8,6 @@ steps:
   - --trigger-http
   - --runtime=python37
   - --allow-unauthenticated 
-  
   args:
   - functions
   - deploy
