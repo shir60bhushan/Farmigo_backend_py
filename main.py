@@ -2,13 +2,14 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
+print(firebase_admin)
 cred = credentials.Certificate('./serviceAccountkey.json')
 default_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 def getmarketDetails_function(request):
     """Responds to  HTTP request.
-    Args:doudfsdfsdfsble function
+    Args:doudf raw pushsdfsble function
     """
     request_json = request.get_json()
     if request.args and 'message' in request.args:
@@ -24,7 +25,7 @@ def pushDataToFireStore():
     today = datetime.datetime.now()
    
     # Using add to add documents with auto generated keys
-db.collection('persons').add({'name':'John', 'age':40, 'address': "New York"})
+db.collection('persons').add({'name':'John', 'age':88, 'address': "New York"})
 db.collection('persons').add({'name':'Jane', 'age':50, 'address': "Los Angeles"})
 db.collection('persons').add({'name':'Mark', 'age':40, 'address': "Paris"})
 db.collection('persons').add({'name':'Harry', 'age':40, 'address': "London"})
@@ -47,6 +48,7 @@ db.collection('persons').document('HP').set(data, merge=True)
 data = {
     'name': 'Iron Man',
     'address': 'USA'
+
 }
 document_reference=db.collection('heroes').document()
 document_reference.set(data)
