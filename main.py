@@ -23,7 +23,7 @@ def getMarketDetails(request):
 def pushToFireStoreData():
     today = datetime.datetime.now()
    
-    ## Using add t00o add documents with auto generated keys
+##qqUsing add t00o add documents with auto generated keys
 db.collection('persons').add({'name':'John', 'age':88, 'address': "New York"})
 db.collection('persons').add({'name':'Jane', 'age':50, 'address': "Los Angeles"})
 db.collection('persons').add({'name':'Mark', 'age':40, 'address': "Paris"})
