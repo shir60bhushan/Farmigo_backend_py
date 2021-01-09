@@ -20,7 +20,7 @@ def getMarketDetails(request):
 
         
   
-def pushToFireStoreData(request):
+def pushToFireStoreData(self):
 
 ## Using add to add documents with auto generated keys
     db.collection('persons').add({'name':'Jane','age':50, 'address': "Los Angeles"})
