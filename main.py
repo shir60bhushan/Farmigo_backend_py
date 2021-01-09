@@ -30,7 +30,7 @@ db.collection('persons').add({'name':'Mark', 'age':40, 'address': "Paris"})
 db.collection('persons').add({'name':'Harry', 'age':40, 'address': "London"})
 db.collection('persons').add({'name':'Ron', 'age':40, 'address': "Mlan"})
 
-# Create a reference for the document before setting
+# Create a refekjrence for the document before setting
 data = {
     'name': 'Harry Pottery',
     'address': 'USA'
