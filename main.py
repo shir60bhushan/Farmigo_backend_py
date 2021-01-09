@@ -20,7 +20,7 @@ def getMarketDetails(request):
 
         
   
-def pushToFireStoreData():
+def pushToFireStoreData(request):
     today = datetime.datetime.now()
    
 ##qqUsijng add t00o add documents with auto generated keys
