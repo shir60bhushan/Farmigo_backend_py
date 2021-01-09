@@ -22,17 +22,16 @@ def getMarketDetails(request):
         
   
 def pushToFireStoreData():
-   
-# Using add t00o add documents with auto generated keys
-db.collection('persons').add({'name':'John', 'age':88, 'address': "New York"})
+  # Using add to add documents with auto generated keys
+db.collection('persons').add({'name':'John', 'age':40, 'address': "New York"})
 db.collection('persons').add({'name':'Jane', 'age':50, 'address': "Los Angeles"})
 db.collection('persons').add({'name':'Mark', 'age':40, 'address': "Paris"})
 db.collection('persons').add({'name':'Harry', 'age':40, 'address': "London"})
-db.collection('persons').add({'name':'Ron', 'age':40, 'address': "Mlan"})
+db.collection('persons').add({'name':'Ron', 'age':40, 'address': "Milan"})
 
-# Create a refekjrence for the document before setting
+# Create a reference for the document before setting
 data = {
-    'name': 'Harry Pottery',
+    'name': 'Harry Potter',
     'address': 'USA'
 }
 
@@ -47,10 +46,9 @@ db.collection('persons').document('HP').set(data, merge=True)
 data = {
     'name': 'Iron Man',
     'address': 'USA'
-
 }
 document_reference=db.collection('heroes').document()
 document_reference.set(data)
+
 # Adding subcollections
 document_reference.collection('movies').add({'name':'Avengers'})
-
