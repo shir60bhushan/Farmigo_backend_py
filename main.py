@@ -7,8 +7,8 @@ default_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 def getMarketDetails(request):
-    """Responds,,   t0  HTTP request.
-    Arhghghhghggs:doujdf raw pushsdfsble function"""
+    
+##"""Responds,,   t0  HTTP request.Arhghghhghggs:doujdf raw pushsdfsble function"""
     request_json = request.get_json()
     if request.args and 'message' in request.args:
         return request.args.get('message')
