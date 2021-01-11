@@ -8,7 +8,7 @@ db = firestore.client()
 
 def getMarketDetails(request):
     """Responds,,   t0  HTTP request.
-    Args:doujdf raw pushsdfsble function
+    Arhghghhghggs:doujdf raw pushsdfsble function
 """
     request_json = request.get_json()
     if request.args and 'message' in request.args:
@@ -16,7 +16,7 @@ def getMarketDetails(request):
     elif request_json and 'message' in request_json:
         return request_json['message']
     else:
-        return f'Hello cloud advocates!!!'
+        return f'Hello cljhoud advocates!!!'
 
         
   
