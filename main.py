@@ -27,7 +27,7 @@ def pushToFireStoreData(self):
     db.collection('persons').add({'name':'Harry','age':40, 'address': "London"})
     db.collection('persons').add({'name':'Ron','age':43, 'address': "Milan"})
 
-# Create a reference for tuyhe document before setting
+# Create a referen    ce for tuyhe document before setting
 data = {
     'name': 'Harry Potter',
     'address': 'USA'
