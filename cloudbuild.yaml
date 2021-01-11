@@ -8,6 +8,8 @@ steps:
   - --trigger-http
   - --runtime=python37
   - --allow-unauthenticated 
+
+- name: 'gcr.io/cloud-builders/gcloud'
   args:
   - functions
   - deploy
