@@ -7,7 +7,7 @@ default_app = firebase_admin.initialize_app(cred)
 db = firestore.client()
 
 def getMarketDetails(request):
-    """Responds,,   to00  HTTP request.
+    """Responds,,   t0  HTTP request.
     Args:doujdf raw pushsdfsble function
 """
     request_json = request.get_json()
@@ -26,7 +26,7 @@ def pushToFireStoreData(self):
     db.collection('persons').add({'name':'Jane','age':50, 'address': "Los Angeles"})
     db.collection('persons').add({'name':'Mark','age':40, 'address': "Paris"})
     db.collection('persons').add({'name':'Harry','age':40, 'address': "London"})
-    db.collection('persons').add({'name':'Ron','age':40, 'address': "Milan"})
+    db.collection('persons').add({'name':'Ron','age':43, 'address': "Milan"})
 
 # Create a reference for tuyhe document before setting
 data = {
